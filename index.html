@@ -11,6 +11,33 @@
     <link rel="stylesheet" href="assets/css/themify-icons.css">
     <!-- Bootstrap + JohnDoe main styles -->
 	<link rel="stylesheet" href="assets/css/johndoe.css">
+    <style>
+        .map-responsive{
+
+    overflow:hidden;
+
+    padding-bottom:56.25%;
+
+    position:relative;
+
+    height:0;
+
+}
+
+.map-responsive iframe{
+
+    left:0;
+
+    top:0;
+
+    height:100%;
+
+    width:100%;
+
+    position:absolute;
+
+}
+    </style>
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
     <a href="components.html" class="btn btn-primary btn-component" data-spy="affix" data-offset-top="600"><i class="ti-shift-left-alt"></i> Components</a>
@@ -722,7 +749,7 @@
         <div class="container">
             <div class="row">
                 
-                <div class="col-lg-7">
+                <div class="map-responsive col-lg-7">
                      <!-- <div class="contact-form-card">
                         <h4 class="contact-title">Send a message</h4>
                         <form action="">
